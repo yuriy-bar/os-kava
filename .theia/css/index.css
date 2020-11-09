@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0'
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Rokkit', serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+img {
+    max-width: 300px;
+}
