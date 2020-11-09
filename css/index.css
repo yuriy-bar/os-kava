@@ -5,6 +5,26 @@ h1, h2, h3 {
     padding: 0;
 }
 
+head {
+    
+}
+
+header .banner {
+    background-image: url(../img/gallery1.jpg);
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} 
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
 h1 {
     text-transform: uppercase;
     font-family: 'Rokkitt', serif;
@@ -19,4 +39,16 @@ h2, h3 {
 
 img {
     max-width: 300px;
+}
+header nav .menu-items a {
+    display: block;
+    text-decoration: none;
+    color: var(--main-color);
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 3px;
+}
+
+.menu-items a:hover {
+    border-color: 
 }
