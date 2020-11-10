@@ -6,7 +6,6 @@ h1, h2, h3 {
 }
 
 head {
-    
 }
 
 header .banner {
@@ -41,14 +40,15 @@ h2, h3 {
 img {
     max-width: 300px;
 }
-header nav .menu-items a {
+/* header nav .menu-items a {
+    background-image: url(../img/photo_for_background.png);
     display: block;
     text-decoration: none;
     color: var(--main-color);
     text-transform: uppercase;
     border: 1px solid transparent;
     padding: 3px;
-}
+} */
 
 .menu-items a:hover {
     border-color: 
