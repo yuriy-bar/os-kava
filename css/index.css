@@ -83,4 +83,6 @@ img {
 
 .product-card {
     display: inline;
+    flex-direction: row;
 }
+#container
