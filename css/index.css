@@ -1,5 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caveat:wght@700&display=swap');
 
+:root{
+    font-family: 'Caveat', cursive;
+    --main-color: white;
+    --accent-color: rgb(150, 120, 120);
+}
+body{
+    max-width: 1200px;
+    margin: auto;
+    background-image: url(../img/background.png);
+    background-size: cover;
+}
+.burger-icon{
+    color: white;
+    margin-left: auto;
+}
+header nav a .logo-img{
+    width: 131px;
+    display: flex;
+}
+#burger-checkbox{
+    display: none;
+}
+header nav .menu-items{
+    display: none;
+}
+header nav input:checked ~ .menu-items{
+    display: block;
+}
+header nav .menu-items a{
+    display: block;
+    font-family: 'Caveat', cursive;
+    text-decoration: none;
+    text-align: center;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+@media (min-width: 769px){
+    header nav .menu-items{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex: 1;
+        font-family: 'Caveat', cursive;
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--main-color);
+        border: 1px solid transparent;
+    }
+    .burger-icon{
+        display: none;
+    }
+}
+
+header nav {
+    display: flex;
+    padding-top: 30px;
+    margin: 0px 30px 0px 0px;
+}
+
 h1, h2, h3 {
     margin: 0;
     padding: 0;
@@ -8,12 +69,6 @@ h1, h2, h3 {
 
 nav {
     padding: 5px, 5px, 5px, 10px;
-}
-
-:root {
-    font-family: 'Caveat', cursive;
-    --main-color: white;
-    --accent-color: rgb(150, 120, 120);
 }
 
 header nav .logo-image {
@@ -73,7 +128,7 @@ img {
 
 .menu-items > a:hover {
     border: 1px solid var(white);
-    color: white;
+    color: rgb(255, 174, 0);
 }
 
 .menu-items > a {
@@ -85,4 +140,4 @@ img {
     display: inline;
     flex-direction: row;
 }
-#container
+
