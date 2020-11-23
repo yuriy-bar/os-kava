@@ -124,6 +124,11 @@ img {
     max-width: 300px;
 }
 
+.carousel-img {
+    max-width: 1000px;
+    margin: auto;
+}
+
 .menu-items {
     text-transform: uppercase;
     font-family: 'Caveat';
