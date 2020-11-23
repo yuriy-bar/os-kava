@@ -12,7 +12,7 @@ function slide() {
     showSlide(currentIdx);
 }
 
-setInterval(slide, 100000);
+setInterval(slide, 3000);
 
 function back() {
     currentIdx = --currentIdx < 0 ? images.length - 1 : currentIdx;
