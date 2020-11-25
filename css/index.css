@@ -45,6 +45,20 @@ header nav .menu-items a{
     color: rgb(255, 174, 0);
 }
 
+.menu-items {
+    text-transform: uppercase;
+    font-family: 'Caveat';
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.menu-items > a {
+    text-decoration: none;
+    color: white;
+}
+
+
 header nav {
     display: flex;
     padding-top: 30px;
@@ -112,9 +126,14 @@ img {
     max-width: 300px;
 }
 
+.news {
+    display: flex;
+}
+
 .carousel-img {
     max-width: 1000px;
     margin: auto;
+    
 }
 
 .carousel {
@@ -130,19 +149,6 @@ img {
     position: absolute;
     top: 50%;
     right: 0;
-}
-
-.menu-items {
-    text-transform: uppercase;
-    font-family: 'Caveat';
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 100px;
-}
-
-.menu-items > a {
-    text-decoration: none;
-    color: white;
 }
 
 .carrency {
