@@ -1,0 +1,44 @@
+:root {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    --main-color: black;
+    font-size: 18px;
+}
+
+.small-image {
+    width: 75px;
+}
+.carrency {
+    width: 20px;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+.navbar-nav {
+    margin-left: 50%;
+}
+@media (min-width: 769px) {
+    header nav {
+        display: flex;
+    } 
+    header nav .menu-items {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex: 1;
+    }
+}
+
+header {
+    background-image: url(../img/ring-purpule.jpg);
+    min-height: 700px;
+    background-size: cover;
+    background-position: 40% 50%;
+    display: flex;
+    flex-direction: column;  
+}

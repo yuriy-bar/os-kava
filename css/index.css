@@ -84,11 +84,6 @@ nav {
     filter: brightness(90%)
 }
 
-.products-list {
-    display: flex;
-    justify-content: space-between;
-}
-
 h1, h2, h3 {
     margin: center;
     padding: center;
@@ -150,47 +145,90 @@ img {
     color: white;
 }
 
-.product-card {
-    display: inline;
-    flex-direction: row;
+.carrency {
+    width: 5px;
 }
 
-.clock {
-    display: inline;
-    align-items: flex-end;
+.products-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.all-menu {
-  position: relative;
-  display: block;
-  color: #777674;
-  font-weight: bold;
-  text-decoration: none;
-  text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 7px 3px;
-  user-select: none;
-  padding: 1em 2em;
-  outline: none;
-  border-radius: 3px / 100%;
-  background-image:
-   linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
-   linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
-   linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
-   linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
-   linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5)),
-   linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
-  background-repeat: no-repeat;
-  background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
-  background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
-  box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+.products-list .card {
+    max-width: 300px;
 }
 
-.all-menu:hover {
-  transition: .5s linear;
-  background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+.shortcut-menu .card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: auto;
+    border: none;
 }
-.all-menu:active {
-  top: 1px;
+
+.products-list .card img {
+    display: block;
+    max-width: 80%;
+    margin: auto;
+   
 }
+.shortcut-menu .card p {
+    text-align: center;
+    font-size: 22px;
+    font-family: Nanum Myeongjo,serif;
+    margin: 15px 0;
+}
+
+.btn-all-menu {
+    background: rgb(255, 174, 0);
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    display: block;
+    margin: auto;
+    }
+
+    .btn-all-menu:hover {
+    background:#fff;
+    color: rgb(255, 174, 0);
+    }
+
+.btn-all-menu:before, 
+.btn-all-menu:after{ 
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background:  rgb(255, 174, 0);
+    transition:400ms ease all;
+    }
+
+.btn-all-menu:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+    
+.btn-all-menu:hover:before,.btn-all-menu:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}
+  
+footer{
+  text-align: center;
+  font-size: 10px;
+}
+  
 
 .logo-image {
     display: block;
@@ -198,4 +236,9 @@ img {
     max-width: 100px;
     margin-top: -60px;
     margin-bottom: 5px;
+}
+
+.clock {
+    display: inline;
+    align-items: flex-end;
 }
