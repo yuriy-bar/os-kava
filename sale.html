@@ -3,28 +3,93 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Акції</title>
+        <title>Ось кава - Акції</title>
+        <link rel="icon" href="img/os_kava_logo_new.png">
         <link rel="stylesheet" href="css/sale.css">
     </head>
     <body>
-        <header id="sale">
+        <header id="home">
             <nav>
                 <div class="logo-menu-banner">
                 <img class="logo-image" src="img/os_kava_logo_new.png" alt="This is coffee">
-                    <!-- <label class="burger-icon" for="burger-checkbox">&&&</label> -->
-                    <!-- <input type="checkbox" id="burger-checkbox"> -->
+                <label class="burger-icon" for="burger-checkbox">☰</label>
+                <input type="checkbox" id="burger-checkbox">
                 <div class="menu-items">
                     <a href="index.html">Головна</a>
                     <a href="menu.html">Меню</a>
-                    <a href="location.html">Локація</a>
+                    <a href="location.html">Як знайти</a>
                     <a href="sale.html">Акції</a>
                     <a href="contacts.html">Контакти</a>
+                    <!-- <a class="carrency" href="currency.html">Валюта</a> -->
                 </div>
                 </div>
             </nav>
             <div class="banner">
-                <h1>● Ось кава ●</h1>
+                <!-- <h1>● Ось кава ●</h1> -->
             </div>
         </header>
+        <main>
+          <div class="vizit-card">
+              <h2 id="blink7"><br></br>Кожна сьома кава - безкоштовно!<br></br></h2>
+            <img src="img/vizit-card-1.jpg" alt="Vizit-card-top">
+          </div> 
+          <section class="callback-form">
+              <div class="callback-form__wrapper">
+                <div class="container">
+                  <div class="callback">
+                    <h2>Зворотній зв'язок</h2>
+                    <form>
+                      <div class="form-group">
+                        <label class="callback-label">
+                          <input class="input" type="text" placeholder="Ваше ім'я" required="" name="user-name">
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="callback-label">
+                          <input class="input" type="tel" placeholder="Номер телефону" required="" name="user-phone">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your phone with anyone else.</small>
+                        </label>
+                      </div>
+                      <button type="submit" class="btn-btn-primary">Надіслати</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
+        </main>
+        <footer>
+            <!-- <div class="clock"></div>
+            <h1>Music Player</h1>
+            <div class="music-container" id="music-container">
+            <div class="music-info">
+                <h4 id="title"></h4>
+                <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+                </div>
+            </div> -->
+
+            <!-- <audio src="music/ukulele.mp3" id="audio"></audio>
+
+            <div class="img-container">
+                <img src="img/music-player/ukulele.jpg" alt="music-cover" id="cover" />
+            </div>
+            <div class="navigation">
+                <button id="prev" class="action-btn">
+                <i class="fas fa-backward">❚◀ </i>
+                </button>
+                <button id="play" class="action-btn action-btn-big">
+                <i class="fas fa-play">▶∎</i>
+                </button>
+                <button id="next" class="action-btn">
+                <i class="fas fa-forward">▶❚</i>
+                </button>
+            </div>
+            </div>
+            <br>
+            </br> -->
+        </footer>
+        <!-- <script src="js/index.js"></script> -->
+        <!-- <script src="js/carousel.js"></script>
+        <script src="js/music-player.js"></script> -->
     </body>
 </html>

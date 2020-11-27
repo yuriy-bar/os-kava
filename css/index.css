@@ -70,11 +70,11 @@ header nav .menu-items a{
 }
 
 
-header nav {
+/* header nav {
     /* display: flex; */
     /* padding-top: 30px; */
-    /* margin: 0px 30px 0px 0px; */
-}
+    /* margin: 0px 30px 0px 0px; 
+} */
 
 @media (min-width: 769px){
     header nav .menu-items{
@@ -122,6 +122,8 @@ nav {
     background-size: cover;
     background-position: center;
     /* display: flex; */
+    font-family: 'Caveat', cursive;
+
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -196,7 +198,7 @@ h4 {
 }
 
 #hidden-text{
-    border: 1px solid #ccc;
+    border: 1px solid transparent;
     display: none;
     font-size: 22px;
     margin-top: 10px;
@@ -220,12 +222,22 @@ h4 {
     outline:none;
     display: block;
     margin: auto;
-    }
+}
 
-    .btn-all-menu:hover {
+.btn-all-menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-all-menu a:hover {
+    text-decoration: none;
+    color:  rgb(255, 174, 0);
+}
+
+.btn-all-menu:hover {
     background:#fff;
     color: rgb(255, 174, 0);
-    }
+}
 
 .btn-all-menu:before, 
 .btn-all-menu:after{ 
@@ -264,7 +276,6 @@ h4 {
     max-width: 1000px;
     /* margin: auto; */
     
-} */
 
 
 
@@ -351,15 +362,16 @@ h4 {
     color: var(--second-color);
   }
 
+.btn-btn-primary{
+    width: 101%;
+}
+
 footer{
   text-align: center;
   font-size: 10px;
 }
   
-
-
-
-.clock {
+/* .clock {
     display: inline;
     align-items: flex-end;
-}
+} */
