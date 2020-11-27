@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ось кава</title>
+        <title>Ось кава - Головна</title>
+        <link rel="icon" href="img/os_kava_logo_new.png">
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
@@ -19,7 +20,7 @@
                     <a href="location.html">Локація</a>
                     <a href="sale.html">Акції</a>
                     <a href="contacts.html">Контакти</a>
-                    <a class="carrency" href="currency.html">Валюта</a>
+                    <!-- <a class="carrency" href="currency.html">Валюта</a> -->
                 </div>
                 </div>
             </nav>
@@ -33,31 +34,39 @@
                 <div class="products-list">
                     <div class="card">
                         <img src="img/classic.jpg" alt="classic">
+                        <span id="hidden-text">
                         <h3>Класика</h3>
                         <p>
-                            <a href="#">Тут можете дізнатись про класичні напої, які ми готуємо</a>
+                            <a href="#">Класичні напої, які ми готуємо</a>
                         </p>
-                        <img src="img/author.jpg" alt="autor">
+                        </span>
                     </div>
                     <div class="card">
+                        <img src="img/author.jpg" alt="author">
+                        <span id="hidden-text">
                         <h3>Авторська</h3>
                         <p>
                             <a href="#">Кавові напої по авторській рецептурі</a>
                         </p>
-                        <img src="img/tea.jpg" alt="tea">
+                    </span>
                     </div>
                     <div class="card">
+                        <img src="img/tea.jpg" alt="tea">
+                        <span id="hidden-text">
                         <h3>Чаї</h3>
                         <p>
                             <a href="#">Найсмачніші натуральні чаї</a>
                         </p>
+                        </span>
                     </div>
                 </div>
-            </section>    
-                <br>
-                </br>
+            </section>
+            <br>
+            </br>    
             <button class="btn-all-menu">Повне меню</button>
-            <h2>Цікаві факти про каву</h2>
+            <br>
+            </br>
+            <!-- <h2>Цікаві факти про каву</h2>
             <div class="news">
                 <h3>Багато людей обожнюють каву, але існує безліч маловідомих фактів, які можуть вражати!</h3>
                 <img src="img/zerna.jpg" alt="zerna">
@@ -80,37 +89,53 @@
                     <a href="#">Ступінь обсмаження зерен</a>
                 </p>
                 <h4>To roast coffee, you need a lot of dedication and skill. Our company specializes in this process for more than 10 years and supplies only the finest beans. </h4>
-            </div>
-            <h2>Галерея</h2>
+            </div> -->
+            <!-- <h2>Галерея</h2>
             <div class="carousel">
                 <img class="carousel-img" src="img/gallery1.jpg" alt="gallery1">
                 <br>
                     <button class="btn-back">←</button>
                     <button class="btn-fwd">→</button>
                 </br>
-            </div>
+            </div> -->
+            
             <h2>Як нас знайти</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10292.135886808315!2d24.016489!3d49.8418192!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa837eac43b7a2eb8!2z0J7RgdGMINC60LDQstCw!5e0!3m2!1suk!2sua!4v1604614866187!5m2!1suk!2sua" width="600" height="450" style="border:none;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            <h2>Ось кава</h2>
-            <p>м. Львів</p>
-            <p>вул. Городоцька 65</p>
+            <div class="location"></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10292.135886808315!2d24.016489!3d49.8418192!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa837eac43b7a2eb8!2z0J7RgdGMINC60LDQstCw!5e0!3m2!1suk!2sua!4v1604614866187!5m2!1suk!2sua" width="100%" height="100%" style="border:none;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <h2>Ось кава</h2>
+                <p>м. Львів</p>
+                <p>вул. Городоцька 65</p>
+                <br>
+                </br>
+            </div>
+            <section class="callback-form">
+                <div class="callback-form__wrapper">
+                  <div class="container">
+                    <div class="callback">
+                      <h2>Want to Pamper Your Nails?</h2>
+                      <p class="callback-text">
+                        Enter your phone number, and we will call you back ASAP.
+                      </p>
+                      <form action="YOUR-ADRESS-HERE" method="POST">
+                        <div class="form-group">
+                          <label class="callback-label">
+                            <input class="input" type="text" placeholder="Your Name" required="" name="user-name">
+                          </label>
+                        </div>
+                        <div class="form-group">
+                          <label class="callback-label">
+                            <input class="input" type="tel" placeholder="Your Phone" required="" name="user-phone">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your phone with anyone else.</small>
+                          </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </section>
         </main>
         <footer>
-            <h2>Зворотній зв'язок</h2>
-            <form>
-                <br>
-                <label>
-                    Ваше ім'я:
-                    <input type="text" placeholder="Ваше ім'я" required>
-                </label>
-                <br>
-                <label>
-                    Ваше повідомлення:
-                    <textarea placeholder="Ваше повідомлення" required></textarea>
-                </label>
-                <br>
-                <input type="submit">
-            </form>
             <div class="clock"></div>
             <h1>Music Player</h1>
             <div class="music-container" id="music-container">
