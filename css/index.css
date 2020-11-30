@@ -28,7 +28,9 @@ body{
 }
 
 .burger-icon{
-    color: white; 
+    color: black; 
+    font-weight: bold;
+    font-size: 30px;
     margin-right: auto;   
 }
 
@@ -378,7 +380,8 @@ footer{
   font-size: 10px;
 }
   
-/* .clock {
+.clock {
     display: inline;
     align-items: flex-end;
-} */
+    font-family: 'Caveat'
+}
