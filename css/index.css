@@ -162,6 +162,8 @@ h4 {
 
 .products-list .card {
     max-width: 300px;
+    margin: 10px;
+
 }
 
 .shortcut-menu  {
@@ -188,6 +190,11 @@ h4 {
 .card a {
     text-decoration: none;
     color: white;
+}
+
+.card a:hover {
+    text-decoration: none;
+    color:  rgb(255, 174, 0);
 }
 
 .products-list .card img {
